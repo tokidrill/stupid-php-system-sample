@@ -5,4 +5,7 @@
 logs/*
 !logs/.gitkeep
 
+src/vendor/*
+!src/vendor/.gitkeep
+
 .env

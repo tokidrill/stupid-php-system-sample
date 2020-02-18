@@ -9,5 +9,10 @@
             "email": "tokidrill@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "SamplePrj\\" : "app/"
+        }
+    },
     "require": {}
 }
