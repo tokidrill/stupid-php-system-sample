@@ -8,11 +8,7 @@ class Database
 
     public function connect()
     {
-        $db_connection = getenv('DB_CONNECTION');
-        $db_name = getenv('DB_DATABASE');
-        $db_host = getenv('DB_HOST');
-
-        $dsn = "${db_connection}:host=${db_host};dbname=${db_name}";
+        $dsn = getenv('DSN');
         $user = getenv('DB_USERNAME');
         $password = getenv('DB_PASSWORD');
 

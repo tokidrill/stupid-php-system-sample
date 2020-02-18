@@ -14,5 +14,7 @@
             "SamplePrj\\" : "app/"
         }
     },
-    "require": {}
+    "require": {
+        "vlucas/phpdotenv": "^4.1"
+    }
 }

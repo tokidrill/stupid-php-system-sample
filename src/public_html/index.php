@@ -2,7 +2,15 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
+use Dotenv\Dotenv;
 use SamplePrj\Database;
+
+$dotenv = Dotenv::createImmutable(__DIR__.'/../');
+$dotenv->load();
+
+// 環境変数の確認.
+$test_env_val = getenv('HOGE');
+echo "環境変数テスト: ${test_env_val}<br>";
 
 // DB 接続の確認.
 try {
