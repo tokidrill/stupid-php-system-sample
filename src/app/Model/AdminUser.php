@@ -31,6 +31,20 @@ class AdminUser
         return $adminUser->save() === true ? $adminUser : false;
     }
 
+    public function find(int $id)
+    {
+        $stmt = $this->getConnection()->prepare("select * from admin_user where id=:id");
+        $stmt->execute([':id' => $id]);
+        return $stmt->fetchAll(\PDO::FETCH_CLASS, self::class)[0];
+    }
+
+    public function all(): array
+    {
+        $stmt = $this->getConnection()->prepare("select * from admin_user");
+        $stmt->execute();
+        return $stmt->fetchAll(\PDO::FETCH_CLASS, self::class);
+    }
+
     protected function getConnection(): \PDO
     {
         try {
