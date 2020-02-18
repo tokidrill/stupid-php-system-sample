@@ -1,0 +1,13 @@
+{
+    "name": "tokidrill/sample-project",
+    "description": "sample",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yuki Sasaki",
+            "email": "tokidrill@gmail.com"
+        }
+    ],
+    "require": {}
+}
