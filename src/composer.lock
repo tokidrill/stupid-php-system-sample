@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b06c6b97b34f479e8d2bff626f7883d0",
+    "content-hash": "e0c8e2772f30c56bb99a113260fd0f12",
     "packages": [
         {
             "name": "davedevelopment/phpmig",
